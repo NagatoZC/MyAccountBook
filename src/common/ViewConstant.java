@@ -28,7 +28,7 @@ public interface ViewConstant {
 	/**
 	 * 欢迎页的高度
 	 */
-	int WELCOME_FRAME_HEIGHT = 1366;
+	int WELCOME_FRAME_HEIGHT = 700;
 	/**
 	 * 登录按钮名称
 	 */
