@@ -1,6 +1,7 @@
 package view;
 
 import common.ViewConstant;
+import view.menu.WelcomeMenu;
 
 import javax.swing.*;
 import java.awt.*;
@@ -24,7 +25,11 @@ public class WelcomeFrame extends JFrame {
 		Container contentPane = getContentPane();
 		//设置窗体大小
 		BorderLayout borderLayout = new BorderLayout();
+
+		setLocationRelativeTo(null);
 		setLayout(borderLayout);
+		setJMenuBar(new WelcomeMenu().getTopMenuBar());
 		contentPane.add(new JLabel("欢迎登录"));
+
 	}
 }
