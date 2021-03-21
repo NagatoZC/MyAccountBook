@@ -16,12 +16,10 @@ import java.awt.*;
  */
 public class LoginFrame  extends JFrame {
 
-	private final JPanel contentPanel = new JPanel();
-
-
 	public LoginFrame() throws HeadlessException {
 		//设置大小
-		setSize(ViewConstant.LOGIN_FRAME_WIDTH,ViewConstant.LOGIN_FRAME_HEIGHT);
+		setSize(ViewConstant.LOGIN_FRAME_WIDTH,
+				ViewConstant.LOGIN_FRAME_HEIGHT);
 		//禁止改变大小
 		setResizable(false);
 		//设置标题
@@ -58,6 +56,8 @@ public class LoginFrame  extends JFrame {
 		loginBtnPanel.add(resetBtn);
 		loginBtn.addActionListener(new LoginAction(userName,passWord));
 		GridLayout gridLayout = new GridLayout(3,2,0,5);
+		//声明一个面板来存放组件
+		JPanel contentPanel = new JPanel();
 		//设置边框
 		contentPanel.setBorder(new EmptyBorder(80,20,20,20));
 		contentPanel.setLayout(gridLayout);
