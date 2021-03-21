@@ -22,6 +22,8 @@ public class LoginFrame  extends JFrame {
 	public LoginFrame() throws HeadlessException {
 		//设置大小
 		setSize(ViewConstant.LOGIN_FRAME_WIDTH,ViewConstant.LOGIN_FRAME_HEIGHT);
+		//禁止改变大小
+		setResizable(false);
 		//设置标题
 		setTitle(ViewConstant.APP_TITLE);
 		//设置icon
